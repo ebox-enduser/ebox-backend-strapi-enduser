@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "vendors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vendor.vendor",
+      "mappedBy": "locations"
+    }
+  }
+}

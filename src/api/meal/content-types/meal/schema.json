@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meals",
+  "info": {
+    "singularName": "meal",
+    "pluralName": "meals",
+    "displayName": "Meal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "foodType": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "fat": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "meals"
+    },
+    "youtubeURL": {
+      "type": "string"
+    },
+    "ingredients": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "singularName": "vendor",
+    "pluralName": "vendors",
+    "displayName": "Vendor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "meals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::meal.meal"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "inversedBy": "vendors"
+    },
+    "name": {
+      "type": "string"
+    },
+    "businessTime": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "delivery": {
+      "type": "integer"
+    },
+    "distance": {
+      "type": "decimal"
+    },
+    "ordered": {
+      "type": "integer"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "vendorImageBackground": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
