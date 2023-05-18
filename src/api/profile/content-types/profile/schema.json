@@ -24,9 +24,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "profile"
     },
-    "age": {
-      "type": "integer"
-    },
     "imageURL": {
       "type": "string"
     },
@@ -37,6 +34,15 @@
         "Female",
         "Not to say"
       ]
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "email": {
+      "type": "email"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }

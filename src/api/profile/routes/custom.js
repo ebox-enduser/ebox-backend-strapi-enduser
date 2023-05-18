@@ -11,6 +11,11 @@ module.exports = {
       path: '/profile/me',
       handler: 'profile.createMe',
       config: {}
+    }, {
+      method: 'PUT',
+      path: '/profile/me',
+      handler: 'profile.updateMe',
+      config: {}
     }
   ]
 }

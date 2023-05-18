@@ -17,7 +17,7 @@ module.exports = createCoreController('api::profile.profile', ({ Strapi }) => ({
         data: {
           fullName: ctx.request.body.fullName,
           phoneNumber: ctx.request.body.phoneNumber,
-          age: ctx.request.body.age,
+          birthday: ctx.request.body.birthday,
           imageURL: ctx.request.body.imageURL,
           gender: ctx.request.body.gender,
           email: user.email,
@@ -67,7 +67,7 @@ module.exports = createCoreController('api::profile.profile', ({ Strapi }) => ({
         data: {
           fullName: ctx.request.body.fullName,
           phoneNumber: ctx.request.body.phoneNumber,
-          age: ctx.request.body.age,
+          birthday: ctx.request.body.birthday,
           imageURL: ctx.request.body.imageURL,
           gender: ctx.request.body.gender,
           email: user.email,
