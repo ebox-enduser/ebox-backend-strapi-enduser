@@ -1,0 +1,885 @@
+{
+	"info": {
+		"_postman_id": "32af252c-cb66-46e3-9b85-0d88c01bf4ae",
+		"name": "eBox-enduser-mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21123796",
+		"_collection_link": "https://dark-zodiac-680786.postman.co/workspace/eBox-enduser~82d1f38f-1634-4052-af9c-7713f9f57765/collection/21123796-32af252c-cb66-46e3-9b85-0d88c01bf4ae?action=share&creator=21123796&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Banner",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/banners?populate=image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"banners"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "image"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meal",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/meals?populate=image,vendors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"meals"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "image,vendors"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/meals?fields=title&populate=image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"meals"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "title"
+								},
+								{
+									"key": "populate",
+									"value": "image"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendor",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/vendors?populate=meals.image, locations,image,vendorImageBackground",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"vendors"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meals.image, locations,image,vendorImageBackground"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/vendors?populate=meals.image, locations,image,vendorImageBackground&filters[id][$eq]=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"vendors"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meals.image, locations,image,vendorImageBackground"
+								},
+								{
+									"key": "filters[id][$eq]",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plan",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/plans?fields=name&populate=image,meals.image",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"plans"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name"
+								},
+								{
+									"key": "populate",
+									"value": "image,meals.image"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"data\":{\n         \"title\": \"postman\",\n         \"description\": \"test 2\"\n         }\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/notifications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/locations?populate=meals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"locations"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meals"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Popular",
+			"item": [
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/populars?populate=meal,meal.image, meal.locations,meal.vendors&pagination[page]=1&pagination[pageSize]=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"populars"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meal,meal.image, meal.locations,meal.vendors"
+								},
+								{
+									"key": "pagination[page]",
+									"value": "1"
+								},
+								{
+									"key": "pagination[pageSize]",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "sign_up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"sokheng5\",    \r\n    \"email\": \"sokheng5@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/local/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"local",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign_in",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identifier\": \"sokheng@gmail.com\",\r\n    \"password\": \"Aa96969696\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/local",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"local"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "changePassword",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjg0MjE1MjM5LCJleHAiOjE2ODY4MDcyMzl9.-0dy_NROAD-6RjEC44MMOVYrxKscJS8lRvDhedvVWuE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\": \"123123123\",\r\n    \"password\": \"321321321\",\r\n    \"passwordConfirmation\": \"321321321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/auth/change-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"admin\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullName",
+									"value": "jonh wick",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "2023-02-04",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "32123",
+									"type": "text"
+								},
+								{
+									"key": "imageURL",
+									"value": "https://www.tech101.in/wp-content/uploads/2018/07/blank-profile-picture.png",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meal Ordered",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test3\",\r\n    \"vendor\":2\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/meal-ordered/meal_ordered",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"meal-ordered",
+								"meal_ordered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Current Order Meal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/meal-ordered/meal_ordered",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"meal-ordered",
+								"meal_ordered"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET by Email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjg0MjE1MjM5LCJleHAiOjE2ODY4MDcyMzl9.-0dy_NROAD-6RjEC44MMOVYrxKscJS8lRvDhedvVWuE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/users?populate=meal_ordereds.vendor.image&filters[email][$eq]=sokheng@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meal_ordereds.vendor.image"
+								},
+								{
+									"key": "filters[email][$eq]",
+									"value": "sokheng@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjg0MjE1MjM5LCJleHAiOjE2ODY4MDcyMzl9.-0dy_NROAD-6RjEC44MMOVYrxKscJS8lRvDhedvVWuE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/users?populate=meal_ordereds.vendor.image&filters[id][$eq]=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "meal_ordereds.vendor.image"
+								},
+								{
+									"key": "filters[id][$eq]",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Location",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"home\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/user-location/location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"user-location",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/user-location/location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"user-location",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/users?populate=user-location&filters[email][$eq]=sokheng@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "user-location"
+								},
+								{
+									"key": "filters[email][$eq]",
+									"value": "sokheng@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "2b4872f88e1407159eb76338db8cae30570d9437b421145d3364f2420af7dcf499f17b848a0fed33c0422ce7e6aa94f7382247731bc0f71010d53a6ab082fdb9b0e06de9b44d5e530dd288e59d4c819dee3c79168ed7515cf53ef28698cfc0d5c554277fce0cf5ebd05a7de6f052a4f6d6f6f1e7d21c2e40f218a84fdc128136",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
