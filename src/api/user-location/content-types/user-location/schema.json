@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_locations",
+  "info": {
+    "singularName": "user-location",
+    "pluralName": "user-locations",
+    "displayName": "UserLocation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_location"
+    }
+  }
+}

@@ -11,7 +11,7 @@ module.exports = createCoreController('api::profile.profile', ({ Strapi }) => ({
     try {
       const user = ctx.state.user;
       if (!user) {
-        return ctx.badRequest(401, [ { messages: "No athorized user found!" } ]);
+        return ctx.badRequest(401, [ { messages: "No authorized user found!" } ]);
       }
       const result = await strapi.entityService.create('api::profile.profile', {
         data: {
@@ -33,7 +33,7 @@ module.exports = createCoreController('api::profile.profile', ({ Strapi }) => ({
     try {
       const user = ctx.state.user;
       if (!user) {
-        return ctx.badRequest(401, [ { messages: "No athorized user found!" } ]);
+        return ctx.badRequest(401, [ { messages: "No authorized user found!" } ]);
       }
       const result = await strapi.db.query('api::profile.profile').findOne({
         where: {

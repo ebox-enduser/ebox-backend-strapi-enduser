@@ -27,21 +27,13 @@
     "imageURL": {
       "type": "string"
     },
-    "gender": {
-      "type": "enumeration",
-      "enum": [
-        "Male",
-        "Female",
-        "Not to say"
-      ]
-    },
     "birthday": {
       "type": "date"
     },
     "email": {
       "type": "email"
     },
-    "location": {
+    "gender": {
       "type": "string"
     }
   }

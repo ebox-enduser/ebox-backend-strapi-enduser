@@ -68,6 +68,18 @@
       "relation": "oneToOne",
       "target": "api::profile.profile",
       "mappedBy": "user"
+    },
+    "user_location": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-location.user-location",
+      "mappedBy": "user"
+    },
+    "meal_ordereds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::meal-ordered.meal-ordered",
+      "mappedBy": "user"
     }
   }
 }
