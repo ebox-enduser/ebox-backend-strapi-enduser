@@ -42,11 +42,14 @@ module.exports = createCoreController('api::user-location.user-location', ({ Str
             }
           }
         },
+        populate: [ 'user' ],
+
       });
       return result;
     } catch (err) {
       return ctx.badRequest(500, [ { messages: [ { id: 'Error' } ] } ]);
     }
   },
+
 
 }));

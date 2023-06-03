@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_vendors",
+  "info": {
+    "singularName": "favorite-vendor",
+    "pluralName": "favorite-vendors",
+    "displayName": "FavoriteVendor",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vendor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vendor.vendor"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "favorite_vendors"
+    }
+  }
+}

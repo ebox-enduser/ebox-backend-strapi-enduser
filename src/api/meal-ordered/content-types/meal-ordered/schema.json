@@ -31,13 +31,13 @@
       "relation": "oneToMany",
       "target": "api::meal.meal"
     },
-    "totalPrice": {
-      "type": "decimal"
-    },
     "paymentMethod": {
       "type": "string"
     },
     "address": {
+      "type": "string"
+    },
+    "totalPrice": {
       "type": "string"
     }
   }

@@ -1,85 +1,6 @@
 {
 	"version": 2,
 	"data": {
-		"api::vendor.vendor": {
-			"1": {
-				"id": 1,
-				"name": "Vendor A",
-				"businessTime": "07 AM - 09 PM",
-				"phoneNumber": 123123123,
-				"delivery": 1,
-				"distance": 1.5,
-				"ordered": 102,
-				"duration": 30,
-				"createdAt": "2023-04-28T08:12:13.196Z",
-				"updatedAt": "2023-05-15T09:18:09.188Z",
-				"publishedAt": "2023-04-28T08:13:21.216Z",
-				"meals": [
-					2,
-					3,
-					4
-				],
-				"locations": [
-					1
-				],
-				"image": 12,
-				"vendorImageBackground": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"2": {
-				"id": 2,
-				"name": "Vendor B",
-				"businessTime": "08 AM - 11 PM",
-				"phoneNumber": 123123123,
-				"delivery": 1,
-				"distance": 1,
-				"ordered": 42,
-				"duration": 40,
-				"createdAt": "2023-04-28T08:12:33.164Z",
-				"updatedAt": "2023-05-15T09:17:56.887Z",
-				"publishedAt": "2023-04-28T08:12:33.713Z",
-				"meals": [
-					2,
-					3,
-					4,
-					1
-				],
-				"locations": [
-					2
-				],
-				"image": 11,
-				"vendorImageBackground": 8,
-				"createdBy": null,
-				"updatedBy": null
-			}
-		},
-		"api::location.location": {
-			"1": {
-				"id": 1,
-				"name": "Orussey Market",
-				"createdAt": "2023-04-28T08:07:06.274Z",
-				"updatedAt": "2023-05-15T09:13:36.996Z",
-				"publishedAt": "2023-04-28T08:07:06.857Z",
-				"vendors": [
-					1
-				],
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"2": {
-				"id": 2,
-				"name": "Toul Tom Pong Market",
-				"createdAt": "2023-04-28T08:08:06.539Z",
-				"updatedAt": "2023-05-15T09:13:37.996Z",
-				"publishedAt": "2023-04-28T08:08:07.094Z",
-				"vendors": [
-					2
-				],
-				"createdBy": null,
-				"updatedBy": null
-			}
-		},
 		"api::plan.plan": {
 			"1": {
 				"id": 1,
@@ -401,81 +322,51 @@
 			}
 		},
 		"plugin::upload.folder": {},
-		"api::meal-ordered.meal-ordered": {
+		"api::vendor.vendor": {
 			"1": {
 				"id": 1,
-				"name": "somlorkako",
-				"createdAt": "2023-05-25T14:01:23.038Z",
-				"updatedAt": "2023-05-26T03:25:05.339Z",
-				"publishedAt": "2023-05-25T14:01:26.166Z",
-				"vendor": 1,
-				"user": 2,
+				"name": "Vendor A",
+				"businessTime": "07 AM - 09 PM",
+				"phoneNumber": 123123123,
+				"delivery": 1,
+				"distance": 1.5,
+				"ordered": 102,
+				"duration": 30,
+				"createdAt": "2023-04-28T08:12:13.196Z",
+				"updatedAt": "2023-05-15T09:18:09.188Z",
+				"publishedAt": "2023-04-28T08:13:21.216Z",
+				"location": null,
+				"meals": [
+					2,
+					3,
+					4
+				],
+				"image": 12,
+				"vendorImageBackground": 6,
 				"createdBy": null,
 				"updatedBy": null
 			},
-			"3": {
-				"id": 3,
-				"name": "test",
-				"createdAt": "2023-05-26T01:59:09.577Z",
-				"updatedAt": "2023-05-26T01:59:09.577Z",
-				"publishedAt": null,
-				"vendor": null,
-				"user": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"4": {
-				"id": 4,
-				"name": "test1",
-				"createdAt": "2023-05-26T02:04:44.282Z",
-				"updatedAt": "2023-05-26T02:04:44.282Z",
-				"publishedAt": null,
-				"vendor": null,
-				"user": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"5": {
-				"id": 5,
-				"name": "test1",
-				"createdAt": "2023-05-26T02:05:02.843Z",
-				"updatedAt": "2023-05-26T02:05:02.843Z",
-				"publishedAt": null,
-				"vendor": null,
-				"user": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"6": {
-				"id": 6,
-				"name": "test1",
-				"createdAt": "2023-05-26T02:33:01.184Z",
-				"updatedAt": "2023-05-26T02:33:01.184Z",
-				"publishedAt": null,
-				"vendor": 1,
-				"user": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"7": {
-				"id": 7,
-				"name": "test2",
-				"createdAt": "2023-05-26T02:34:19.844Z",
-				"updatedAt": "2023-05-26T02:34:19.844Z",
-				"publishedAt": null,
-				"vendor": 2,
-				"user": 6,
-				"createdBy": null,
-				"updatedBy": null
-			},
-			"8": {
-				"id": 8,
-				"name": "test3",
-				"createdAt": "2023-05-26T02:36:58.657Z",
-				"updatedAt": "2023-05-26T02:36:58.657Z",
-				"publishedAt": null,
-				"vendor": 2,
-				"user": 6,
+			"2": {
+				"id": 2,
+				"name": "Vendor B",
+				"businessTime": "08 AM - 11 PM",
+				"phoneNumber": 123123123,
+				"delivery": 1,
+				"distance": 1,
+				"ordered": 42,
+				"duration": 40,
+				"createdAt": "2023-04-28T08:12:33.164Z",
+				"updatedAt": "2023-05-15T09:17:56.887Z",
+				"publishedAt": "2023-04-28T08:12:33.713Z",
+				"location": null,
+				"meals": [
+					2,
+					3,
+					4,
+					1
+				],
+				"image": 11,
+				"vendorImageBackground": 8,
 				"createdBy": null,
 				"updatedBy": null
 			}
@@ -529,7 +420,7 @@
 				"createdAt": "2023-05-25T09:06:05.613Z",
 				"updatedAt": "2023-05-25T09:06:34.223Z",
 				"publishedAt": null,
-				"user": 6,
+				"user": null,
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -555,7 +446,7 @@
 				"createdAt": "2023-05-25T09:38:20.975Z",
 				"updatedAt": "2023-05-25T09:38:20.975Z",
 				"publishedAt": null,
-				"user": 6,
+				"user": null,
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -594,7 +485,367 @@
 				"createdAt": "2023-05-26T03:56:03.344Z",
 				"updatedAt": "2023-05-26T03:56:03.344Z",
 				"publishedAt": null,
-				"user": 2,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"10": {
+				"id": 10,
+				"name": "House",
+				"description": "asd",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T07:45:52.476Z",
+				"updatedAt": "2023-05-29T07:45:52.476Z",
+				"publishedAt": null,
+				"user": 11,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"name": "dsa",
+				"description": "asd",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T07:53:53.473Z",
+				"updatedAt": "2023-05-29T07:53:53.473Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"12": {
+				"id": 12,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:05:09.984Z",
+				"updatedAt": "2023-05-29T08:05:09.984Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"name": "",
+				"description": "",
+				"position": "null",
+				"address": "null",
+				"createdAt": "2023-05-29T08:22:51.987Z",
+				"updatedAt": "2023-05-29T08:22:51.987Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"14": {
+				"id": 14,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:25:14.703Z",
+				"updatedAt": "2023-05-29T08:25:14.703Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:25:46.006Z",
+				"updatedAt": "2023-05-29T08:25:46.006Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"16": {
+				"id": 16,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:41:36.752Z",
+				"updatedAt": "2023-05-29T08:41:36.752Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"17": {
+				"id": 17,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:42:43.352Z",
+				"updatedAt": "2023-05-29T08:42:43.352Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"18": {
+				"id": 18,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:46:18.347Z",
+				"updatedAt": "2023-05-29T08:46:18.347Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"19": {
+				"id": 19,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:46:21.554Z",
+				"updatedAt": "2023-05-29T08:46:21.554Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"20": {
+				"id": 20,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:47:42.786Z",
+				"updatedAt": "2023-05-29T08:47:42.786Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"21": {
+				"id": 21,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:47:46.482Z",
+				"updatedAt": "2023-05-29T08:47:46.482Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"22": {
+				"id": 22,
+				"name": "dsa",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-29T08:48:15.109Z",
+				"updatedAt": "2023-05-29T08:48:15.109Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"23": {
+				"id": 23,
+				"name": "",
+				"description": "",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-31T11:35:41.420Z",
+				"updatedAt": "2023-05-31T11:35:41.420Z",
+				"publishedAt": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"24": {
+				"id": 24,
+				"name": "dsa",
+				"description": "dsa",
+				"position": "Latitude: 11.507342, Longitude: 104.874872",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"createdAt": "2023-05-31T11:35:50.280Z",
+				"updatedAt": "2023-05-31T11:35:50.280Z",
+				"publishedAt": null,
+				"user": 16,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"25": {
+				"id": 25,
+				"name": "home",
+				"description": null,
+				"position": null,
+				"address": null,
+				"createdAt": "2023-06-03T06:24:25.081Z",
+				"updatedAt": "2023-06-03T06:24:25.081Z",
+				"publishedAt": null,
+				"user": 16,
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::favorite-vendor.favorite-vendor": {
+			"15": {
+				"id": 15,
+				"createdAt": "2023-06-03T05:30:49.173Z",
+				"updatedAt": "2023-06-03T05:30:49.173Z",
+				"publishedAt": null,
+				"vendor": 1,
+				"user": 16,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"16": {
+				"id": 16,
+				"createdAt": "2023-06-03T05:32:09.832Z",
+				"updatedAt": "2023-06-03T05:32:09.832Z",
+				"publishedAt": null,
+				"vendor": 1,
+				"user": 11,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"17": {
+				"id": 17,
+				"createdAt": "2023-06-03T05:33:52.717Z",
+				"updatedAt": "2023-06-03T05:33:52.717Z",
+				"publishedAt": null,
+				"vendor": 2,
+				"user": 16,
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::meal-ordered.meal-ordered": {
+			"24": {
+				"id": 24,
+				"name": "prorher",
+				"createdAt": "2023-06-03T06:30:36.672Z",
+				"updatedAt": "2023-06-03T06:30:36.672Z",
+				"publishedAt": null,
+				"totalPrice": "12.00",
+				"paymentMethod": "ABA",
+				"address": "Dangkao",
+				"vendor": null,
+				"user": null,
+				"meals": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"31": {
+				"id": 31,
+				"name": "prorher",
+				"createdAt": "2023-06-03T12:31:52.206Z",
+				"updatedAt": "2023-06-03T12:31:52.206Z",
+				"publishedAt": null,
+				"totalPrice": "12.00",
+				"paymentMethod": "ABA",
+				"address": "Dangkao",
+				"vendor": null,
+				"user": null,
+				"meals": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"32": {
+				"id": 32,
+				"name": "prorher",
+				"createdAt": "2023-06-03T12:32:51.862Z",
+				"updatedAt": "2023-06-03T12:32:51.862Z",
+				"publishedAt": null,
+				"totalPrice": "12.00",
+				"paymentMethod": "ABA",
+				"address": "Dangkao",
+				"vendor": 1,
+				"user": 16,
+				"meals": [
+					1,
+					2
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"34": {
+				"id": 34,
+				"name": "prorher",
+				"createdAt": "2023-06-03T12:47:50.306Z",
+				"updatedAt": "2023-06-03T12:47:50.306Z",
+				"publishedAt": null,
+				"totalPrice": "12",
+				"paymentMethod": "ABA",
+				"address": "Dangkao",
+				"vendor": 1,
+				"user": 16,
+				"meals": [
+					1,
+					2
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"35": {
+				"id": 35,
+				"name": "test",
+				"createdAt": "2023-06-03T12:50:58.898Z",
+				"updatedAt": "2023-06-03T12:50:58.898Z",
+				"publishedAt": null,
+				"totalPrice": "12",
+				"paymentMethod": "ABA",
+				"address": "Dangkao",
+				"vendor": 2,
+				"user": 16,
+				"meals": [
+					1,
+					2
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"39": {
+				"id": 39,
+				"name": "Somlor Kako * 2, ",
+				"createdAt": "2023-06-03T12:57:08.208Z",
+				"updatedAt": "2023-06-03T12:57:08.208Z",
+				"publishedAt": null,
+				"totalPrice": "5",
+				"paymentMethod": "Cash",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"vendor": 2,
+				"user": 16,
+				"meals": [
+					2
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"40": {
+				"id": 40,
+				"name": "Somlor Kako * 4, ",
+				"createdAt": "2023-06-03T17:56:11.280Z",
+				"updatedAt": "2023-06-03T17:56:11.280Z",
+				"publishedAt": null,
+				"totalPrice": "9",
+				"paymentMethod": "ABA",
+				"address": "Street 25, Dangkao, Phnom Penh, ព្រះរាជាណាចក្រកម្ពុជា",
+				"vendor": 1,
+				"user": 16,
+				"meals": [
+					2
+				],
 				"createdBy": null,
 				"updatedBy": null
 			}
@@ -609,8 +860,8 @@
 				"createdAt": "2023-04-28T08:23:29.402Z",
 				"updatedAt": "2023-05-15T09:13:43.865Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -624,8 +875,8 @@
 				"createdAt": "2023-05-15T14:37:48.439Z",
 				"updatedAt": "2023-05-15T14:37:48.439Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -639,8 +890,8 @@
 				"createdAt": "2023-05-15T14:38:55.503Z",
 				"updatedAt": "2023-05-15T14:38:55.503Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -654,8 +905,8 @@
 				"createdAt": "2023-05-15T14:39:33.833Z",
 				"updatedAt": "2023-05-15T15:51:20.111Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -669,8 +920,8 @@
 				"createdAt": "2023-05-15T15:49:30.541Z",
 				"updatedAt": "2023-05-15T16:02:12.975Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -684,9 +935,9 @@
 				"createdAt": "2023-05-15T16:14:19.794Z",
 				"updatedAt": "2023-05-16T05:36:36.964Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": null,
-				"user": 6,
+				"birthday": null,
+				"user": null,
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -699,8 +950,8 @@
 				"createdAt": "2023-05-16T05:31:46.466Z",
 				"updatedAt": "2023-05-26T04:15:46.587Z",
 				"publishedAt": null,
-				"birthday": "2023-02-04",
 				"email": "sokheng10@gmail.com",
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -710,13 +961,13 @@
 				"fullName": "jonh wick",
 				"phoneNumber": 32123,
 				"imageURL": "https://www.tech101.in/wp-content/uploads/2018/07/blank-profile-picture.png",
-				"gender": "female",
+				"gender": "male",
 				"createdAt": "2023-05-26T03:53:55.662Z",
-				"updatedAt": "2023-05-26T06:34:53.656Z",
+				"updatedAt": "2023-05-29T07:42:49.139Z",
 				"publishedAt": null,
-				"birthday": "2023-02-04",
 				"email": "sokheng@gmail.com",
-				"user": 2,
+				"birthday": "2023-02-04",
+				"user": null,
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -729,8 +980,8 @@
 				"createdAt": "2023-05-26T06:06:45.522Z",
 				"updatedAt": "2023-05-26T06:06:45.522Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": "sokheng11@gmail.com",
+				"birthday": null,
 				"user": null,
 				"createdBy": null,
 				"updatedBy": null
@@ -744,9 +995,114 @@
 				"createdAt": "2023-05-26T06:08:00.323Z",
 				"updatedAt": "2023-05-26T06:08:00.323Z",
 				"publishedAt": null,
-				"birthday": null,
 				"email": "sokheng12@gmail.com",
+				"birthday": null,
 				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"fullName": "sokheng100",
+				"phoneNumber": 123123123,
+				"imageURL": null,
+				"gender": null,
+				"createdAt": "2023-05-27T09:55:43.615Z",
+				"updatedAt": "2023-05-27T09:55:43.615Z",
+				"publishedAt": null,
+				"email": "sokheng100@gmail.com",
+				"birthday": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"12": {
+				"id": 12,
+				"fullName": "jonh wick",
+				"phoneNumber": 32123,
+				"imageURL": "https://firebasestorage.googleapis.com/v0/b/ebox-42cef.appspot.com/o/profiles%2Fimage_picker_E5974B9F-5D1C-4144-BFA6-58418962C9C4-73051-0000736D02BEAF7C.jpg?alt=media&token=d5dffdee-dad5-41f5-8139-f3bb8b2fe87a",
+				"gender": "other",
+				"createdAt": "2023-05-29T05:18:06.807Z",
+				"updatedAt": "2023-05-29T07:48:34.040Z",
+				"publishedAt": null,
+				"email": "sokheng200@gmail.com",
+				"birthday": "2023-05-25 00:00:00.000",
+				"user": 11,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"fullName": "4",
+				"phoneNumber": 123123123,
+				"imageURL": "https://firebasestorage.googleapis.com/v0/b/ebox-42cef.appspot.com/o/profiles%2Fimage_picker_E5974B9F-5D1C-4144-BFA6-58418962C9C4-73051-0000736D02BEAF7C.jpg?alt=media&token=d5dffdee-dad5-41f5-8139-f3bb8b2fe87a",
+				"gender": "other",
+				"createdAt": "2023-05-29T05:19:47.569Z",
+				"updatedAt": "2023-05-29T05:27:43.308Z",
+				"publishedAt": null,
+				"email": "sokheng201@gmail.com",
+				"birthday": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"14": {
+				"id": 14,
+				"fullName": "sokheng202",
+				"phoneNumber": 123123123,
+				"imageURL": null,
+				"gender": null,
+				"createdAt": "2023-05-29T05:29:06.207Z",
+				"updatedAt": "2023-05-29T05:29:06.207Z",
+				"publishedAt": null,
+				"email": "sokheng202@gmail.com",
+				"birthday": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"fullName": "1231323",
+				"phoneNumber": 3232,
+				"imageURL": "https://firebasestorage.googleapis.com/v0/b/ebox-42cef.appspot.com/o/profiles%2Fimage_picker_E5974B9F-5D1C-4144-BFA6-58418962C9C4-73051-0000736D02BEAF7C.jpg?alt=media&token=d5dffdee-dad5-41f5-8139-f3bb8b2fe87a",
+				"gender": "other",
+				"createdAt": "2023-05-29T07:51:06.838Z",
+				"updatedAt": "2023-05-29T07:52:49.165Z",
+				"publishedAt": null,
+				"email": "sokheng30@gmail.com",
+				"birthday": "null",
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"16": {
+				"id": 16,
+				"fullName": "sokheng31",
+				"phoneNumber": 132131,
+				"imageURL": null,
+				"gender": null,
+				"createdAt": "2023-05-29T08:03:08.164Z",
+				"updatedAt": "2023-05-29T08:03:08.164Z",
+				"publishedAt": null,
+				"email": "sokheng31@gmail.com",
+				"birthday": null,
+				"user": null,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"17": {
+				"id": 17,
+				"fullName": "sokheng40",
+				"phoneNumber": 123123,
+				"imageURL": "https://firebasestorage.googleapis.com/v0/b/ebox-42cef.appspot.com/o/profiles%2Fimage_picker_87BBB393-7B1E-4E30-B0B4-BFB986644227-28616-0000CAEE56529D97.jpg?alt=media&token=0d1df292-e35b-48b7-846a-11c0cc7f8d4e",
+				"gender": "other",
+				"createdAt": "2023-05-29T08:09:54.203Z",
+				"updatedAt": "2023-05-31T09:16:58.321Z",
+				"publishedAt": null,
+				"email": "sokheng40@gmail.com",
+				"birthday": "null",
+				"user": 16,
 				"createdBy": null,
 				"updatedBy": null
 			}
@@ -758,7 +1114,7 @@
 				"description": "Default role given to authenticated user.",
 				"type": "authenticated",
 				"createdAt": "2023-04-28T06:56:46.894Z",
-				"updatedAt": "2023-05-26T01:58:37.988Z",
+				"updatedAt": "2023-06-03T07:09:52.088Z",
 				"permissions": [
 					1,
 					2,
@@ -849,7 +1205,15 @@
 					188,
 					189,
 					193,
-					194
+					194,
+					206,
+					207,
+					208,
+					210,
+					211,
+					212,
+					213,
+					225
 				],
 				"users": [
 					1,
@@ -860,7 +1224,14 @@
 					6,
 					7,
 					8,
-					9
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16
 				],
 				"createdBy": null,
 				"updatedBy": null
@@ -881,8 +1252,9 @@
 				"updatedAt": "2023-05-15T09:13:45.385Z",
 				"role": 1,
 				"profile": 1,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -900,9 +1272,10 @@
 				"updatedAt": "2023-05-15T14:37:47.366Z",
 				"role": 1,
 				"profile": 8,
-				"user_location": 9,
-				"meal_ordereds": [
-					1
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [
+					9
 				],
 				"createdBy": null,
 				"updatedBy": null
@@ -921,8 +1294,9 @@
 				"updatedAt": "2023-05-15T14:38:54.889Z",
 				"role": 1,
 				"profile": 3,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -940,8 +1314,9 @@
 				"updatedAt": "2023-05-15T14:39:33.118Z",
 				"role": 1,
 				"profile": 4,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -959,8 +1334,9 @@
 				"updatedAt": "2023-05-15T15:49:29.909Z",
 				"role": 1,
 				"profile": 5,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -978,14 +1354,14 @@
 				"updatedAt": "2023-05-15T16:14:01.308Z",
 				"role": 1,
 				"profile": 6,
-				"user_location": 4,
 				"meal_ordereds": [
-					3,
+					24,
+					31
+				],
+				"favorite_vendors": [],
+				"user_locations": [
 					4,
-					5,
-					6,
-					7,
-					8
+					6
 				],
 				"createdBy": null,
 				"updatedBy": null
@@ -1004,8 +1380,11 @@
 				"updatedAt": "2023-05-16T07:18:05.521Z",
 				"role": 1,
 				"profile": 7,
-				"user_location": 8,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [
+					8
+				],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -1023,8 +1402,9 @@
 				"updatedAt": "2023-05-26T06:06:44.764Z",
 				"role": 1,
 				"profile": 9,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
 				"createdBy": null,
 				"updatedBy": null
 			},
@@ -1042,8 +1422,169 @@
 				"updatedAt": "2023-05-26T06:07:59.204Z",
 				"role": 1,
 				"profile": 10,
-				"user_location": null,
 				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"10": {
+				"id": 10,
+				"username": "sokheng100@gmail.com",
+				"email": "sokheng100@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$WHOoCPRCz5B1M5PqA1CNCOiddSILcbylBMuEEnM0OGxdlOH8/VizG",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-27T09:55:42.747Z",
+				"updatedAt": "2023-05-27T09:55:42.747Z",
+				"role": 1,
+				"profile": 11,
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"11": {
+				"id": 11,
+				"username": "sokheng200",
+				"email": "sokheng200@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$O312gVyRiDskMu.WAWeb4OXMhXK.H0TYJso0NZJf7YO67w9GMy2F.",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T05:17:44.723Z",
+				"updatedAt": "2023-05-29T05:17:44.723Z",
+				"role": 1,
+				"profile": 12,
+				"meal_ordereds": [],
+				"favorite_vendors": [
+					16
+				],
+				"user_locations": [
+					10
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"12": {
+				"id": 12,
+				"username": "sokheng201@gmail.com",
+				"email": "sokheng201@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$9Gk8meL50Awi8f0E3vuEheKaUpp8YLo/cHlOsoB..uel/DfxiHcFe",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T05:19:46.698Z",
+				"updatedAt": "2023-05-29T05:19:46.698Z",
+				"role": 1,
+				"profile": 13,
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"13": {
+				"id": 13,
+				"username": "sokheng202@gmail.com",
+				"email": "sokheng202@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$hLA9pTw0F6b/.5wTAM4/kuuHXyBTBzEk971ShrQ6Arq6YFXQuzcIO",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T05:29:05.239Z",
+				"updatedAt": "2023-05-29T05:29:05.239Z",
+				"role": 1,
+				"profile": 14,
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"14": {
+				"id": 14,
+				"username": "sokheng30@gmail.com",
+				"email": "sokheng30@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$dBTiQ606ZMcxRFeXS4T9e.Zs0JiquVWAG2yez/pnskaSFobvv8Ehu",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T07:51:06.175Z",
+				"updatedAt": "2023-05-29T07:51:06.175Z",
+				"role": 1,
+				"profile": 15,
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [
+					11
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"15": {
+				"id": 15,
+				"username": "sokheng31@gmail.com",
+				"email": "sokheng31@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$6SwMfHjoQ8Rj19qKqg930ubBZOnLtbr6IBIs/mg/hMOh/xu0.cqUS",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T08:03:06.757Z",
+				"updatedAt": "2023-05-29T08:03:06.757Z",
+				"role": 1,
+				"profile": 16,
+				"meal_ordereds": [],
+				"favorite_vendors": [],
+				"user_locations": [
+					12
+				],
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"16": {
+				"id": 16,
+				"username": "sokheng40@gmail.com",
+				"email": "sokheng40@gmail.com",
+				"provider": "local",
+				"password": "$2a$10$Sif/QVUxtu/v2e28kl60XOYmv05LTXXc14apqgogNTZ.H6H3qCKSK",
+				"resetPasswordToken": null,
+				"confirmationToken": null,
+				"confirmed": true,
+				"blocked": false,
+				"createdAt": "2023-05-29T08:09:53.463Z",
+				"updatedAt": "2023-06-02T13:24:09.250Z",
+				"role": 1,
+				"profile": 17,
+				"meal_ordereds": [
+					32,
+					34,
+					35,
+					39,
+					40
+				],
+				"favorite_vendors": [
+					15,
+					17
+				],
+				"user_locations": [
+					25,
+					24
+				],
 				"createdBy": null,
 				"updatedBy": null
 			}
@@ -1858,6 +2399,78 @@
 				"role": 1,
 				"createdBy": null,
 				"updatedBy": null
+			},
+			"206": {
+				"id": 206,
+				"action": "api::favorite-vendor.favorite-vendor.getFavoriteVendor",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"207": {
+				"id": 207,
+				"action": "api::favorite-vendor.favorite-vendor.update",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"208": {
+				"id": 208,
+				"action": "api::favorite-vendor.favorite-vendor.findOne",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"210": {
+				"id": 210,
+				"action": "api::favorite-vendor.favorite-vendor.find",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"211": {
+				"id": 211,
+				"action": "api::favorite-vendor.favorite-vendor.create",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"212": {
+				"id": 212,
+				"action": "api::favorite-vendor.favorite-vendor.delete",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"213": {
+				"id": 213,
+				"action": "api::favorite-vendor.favorite-vendor.createFavoriteVendor",
+				"createdAt": "2023-06-03T02:29:23.036Z",
+				"updatedAt": "2023-06-03T02:29:23.036Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"225": {
+				"id": 225,
+				"action": "api::favorite-vendor.favorite-vendor.deleteFavoriteVendor",
+				"createdAt": "2023-06-03T07:09:52.320Z",
+				"updatedAt": "2023-06-03T07:09:52.320Z",
+				"role": 1,
+				"createdBy": null,
+				"updatedBy": null
 			}
 		},
 		"api::popular.popular": {
@@ -1916,6 +2529,26 @@
 				"updatedAt": "2023-05-23T11:00:49.462Z",
 				"publishedAt": "2023-05-23T11:00:49.453Z",
 				"description": "test 2",
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"api::location.location": {
+			"1": {
+				"id": 1,
+				"name": "Orussey Market",
+				"createdAt": "2023-04-28T08:07:06.274Z",
+				"updatedAt": "2023-05-15T09:13:36.996Z",
+				"publishedAt": "2023-04-28T08:07:06.857Z",
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"2": {
+				"id": 2,
+				"name": "Toul Tom Pong Market",
+				"createdAt": "2023-04-28T08:08:06.539Z",
+				"updatedAt": "2023-05-15T09:13:37.996Z",
+				"publishedAt": "2023-04-28T08:08:07.094Z",
 				"createdBy": null,
 				"updatedBy": null
 			}

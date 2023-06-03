@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -69,16 +68,22 @@
       "target": "api::profile.profile",
       "mappedBy": "user"
     },
-    "user_location": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::user-location.user-location",
-      "mappedBy": "user"
-    },
     "meal_ordereds": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::meal-ordered.meal-ordered",
+      "mappedBy": "user"
+    },
+    "favorite_vendors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::favorite-vendor.favorite-vendor",
+      "mappedBy": "user"
+    },
+    "user_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-location.user-location",
       "mappedBy": "user"
     }
   }

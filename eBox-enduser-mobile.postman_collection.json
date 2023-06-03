@@ -47,7 +47,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:1337/api/meals?populate=image,vendors",
+							"raw": "http://localhost:1337/api/meals?populate=image",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -60,7 +60,7 @@
 							"query": [
 								{
 									"key": "populate",
-									"value": "image,vendors"
+									"value": "image"
 								}
 							]
 						}
@@ -108,7 +108,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:1337/api/vendors?populate=meals.image, locations,image,vendorImageBackground",
+							"raw": "http://localhost:1337/api/vendors?populate=meals.image,image,vendorImageBackground",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -121,7 +121,7 @@
 							"query": [
 								{
 									"key": "populate",
-									"value": "meals.image, locations,image,vendorImageBackground"
+									"value": "meals.image,image,vendorImageBackground"
 								}
 							]
 						}
@@ -329,7 +329,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"sokheng5\",    \r\n    \"email\": \"sokheng5@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
+							"raw": "{\r\n    \"username\": \"sokheng200\",    \r\n    \"email\": \"sokheng200@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -360,7 +360,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"identifier\": \"sokheng@gmail.com\",\r\n    \"password\": \"Aa96969696\"\r\n}",
+							"raw": "{\r\n    \"identifier\": \"sokheng200@gmail.com\",\r\n    \"password\": \"123123123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -436,7 +436,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTY4NTMzNzQ3NCwiZXhwIjoxNjg3OTI5NDc0fQ.9YyPgDgewk3fjxvY_ee4uW7Gpzb3sW2aeHuihVhpHqI",
 									"type": "string"
 								}
 							]
@@ -476,7 +476,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTY4NTMzNzQ3NCwiZXhwIjoxNjg3OTI5NDc0fQ.9YyPgDgewk3fjxvY_ee4uW7Gpzb3sW2aeHuihVhpHqI",
 									"type": "string"
 								}
 							]
@@ -507,7 +507,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjg1MDczMjExLCJleHAiOjE2ODc2NjUyMTF9.wU3UXs7RZgErkoy5y_ihmOeybolh9gCXCVy8tuMIYkY",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTY4NTMzNzQ3NCwiZXhwIjoxNjg3OTI5NDc0fQ.9YyPgDgewk3fjxvY_ee4uW7Gpzb3sW2aeHuihVhpHqI",
 									"type": "string"
 								}
 							]
@@ -540,11 +540,12 @@
 								{
 									"key": "email",
 									"value": "admin@gmail.com",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "gender",
-									"value": "female",
+									"value": "male",
 									"type": "text"
 								}
 							]
@@ -578,7 +579,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTUyNDYxNywiZXhwIjoxNjg4MTE2NjE3fQ.hW5ZyrnZlaZau7yi0VeNepl4jL7J2MqTgaP4ApwQs70",
 									"type": "string"
 								}
 							]
@@ -587,7 +588,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"test3\",\r\n    \"vendor\":2\r\n    \r\n}",
+							"raw": "{\r\n    \"name\": \"test\",\r\n    \"totalPrice\": \"12\",\r\n    \"paymentMethod\":  \"ABA\",\r\n    \"address\": \"Dangkao\",\r\n    \"meals\": [1,2],\r\n    \"vendor\":  2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -611,7 +612,7 @@
 					"response": []
 				},
 				{
-					"name": "GET Current Order Meal",
+					"name": "GET",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -621,7 +622,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTUyNDYxNywiZXhwIjoxNjg4MTE2NjE3fQ.hW5ZyrnZlaZau7yi0VeNepl4jL7J2MqTgaP4ApwQs70",
 									"type": "string"
 								}
 							]
@@ -630,7 +631,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"name\": \"prorher\",\r\n    \"totalPrice\": 12,\r\n    \"paymentMethod\":  \"ABA\",\r\n    \"address\": \"Dangkao\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -648,86 +649,6 @@
 								"api",
 								"meal-ordered",
 								"meal_ordered"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET by Email",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjg0MjE1MjM5LCJleHAiOjE2ODY4MDcyMzl9.-0dy_NROAD-6RjEC44MMOVYrxKscJS8lRvDhedvVWuE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:1337/api/users?populate=meal_ordereds.vendor.image&filters[email][$eq]=sokheng@gmail.com",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "1337",
-							"path": [
-								"api",
-								"users"
-							],
-							"query": [
-								{
-									"key": "populate",
-									"value": "meal_ordereds.vendor.image"
-								},
-								{
-									"key": "filters[email][$eq]",
-									"value": "sokheng@gmail.com"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET by Id",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjg0MjE1MjM5LCJleHAiOjE2ODY4MDcyMzl9.-0dy_NROAD-6RjEC44MMOVYrxKscJS8lRvDhedvVWuE",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:1337/api/users?populate=meal_ordereds.vendor.image&filters[id][$eq]=1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "1337",
-							"path": [
-								"api",
-								"users"
-							],
-							"query": [
-								{
-									"key": "populate",
-									"value": "meal_ordereds.vendor.image"
-								},
-								{
-									"key": "filters[id][$eq]",
-									"value": "1"
-								}
 							]
 						}
 					},
@@ -746,7 +667,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTc2Njc2NSwiZXhwIjoxNjg4MzU4NzY1fQ.BB_G2HgN8sSAzRMN1rfKsnmZ_OEkksyDG8f1_xRLn-Y",
 									"type": "string"
 								}
 							]
@@ -786,7 +707,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTc2Njc2NSwiZXhwIjoxNjg4MzU4NzY1fQ.BB_G2HgN8sSAzRMN1rfKsnmZ_OEkksyDG8f1_xRLn-Y",
 									"type": "string"
 								}
 							]
@@ -808,24 +729,38 @@
 						}
 					},
 					"response": []
-				},
+				}
+			]
+		},
+		{
+			"name": "Favorite Vendor",
+			"item": [
 				{
-					"name": "GET Copy",
+					"name": "POST",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjg0MTY3MjQxLCJleHAiOjE2ODY3NTkyNDF9.D0rN0LcTv6ASUAiuwtfXmrCHlXP2BnO2C6z3pM6Pfxk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTc2Njc2NSwiZXhwIjoxNjg4MzU4NzY1fQ.BB_G2HgN8sSAzRMN1rfKsnmZ_OEkksyDG8f1_xRLn-Y",
 									"type": "string"
 								}
 							]
 						},
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vendor\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:1337/api/users?populate=user-location&filters[email][$eq]=sokheng@gmail.com",
+							"raw": "http://localhost:1337/api/favorite-vendors/favorite",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -833,17 +768,79 @@
 							"port": "1337",
 							"path": [
 								"api",
-								"users"
-							],
-							"query": [
+								"favorite-vendors",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
 								{
-									"key": "populate",
-									"value": "user-location"
-								},
-								{
-									"key": "filters[email][$eq]",
-									"value": "sokheng@gmail.com"
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTc2Njc2NSwiZXhwIjoxNjg4MzU4NzY1fQ.BB_G2HgN8sSAzRMN1rfKsnmZ_OEkksyDG8f1_xRLn-Y",
+									"type": "string"
 								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/favorite-vendors/favorite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"favorite-vendors",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTY4NTc2Njc2NSwiZXhwIjoxNjg4MzU4NzY1fQ.BB_G2HgN8sSAzRMN1rfKsnmZ_OEkksyDG8f1_xRLn-Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"vendor\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/favorite-vendors/favorite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"favorite-vendors",
+								"favorite"
 							]
 						}
 					},
