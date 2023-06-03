@@ -27,13 +27,13 @@
     "imageURL": {
       "type": "string"
     },
-    "birthday": {
-      "type": "date"
-    },
     "email": {
       "type": "email"
     },
     "gender": {
+      "type": "string"
+    },
+    "birthday": {
       "type": "string"
     }
   }

@@ -10,14 +10,15 @@ module.exports = createCoreController('api::meal-ordered.meal-ordered', ({ Strap
   async createMealOrdered(ctx) {
     try {
       const user = ctx.state.user;
-      const vendor = ctx.state.vendor
       if (!user) {
         return ctx.badRequest(401, [ { messages: "No authorized user found!" } ]);
       }
       const result = await strapi.entityService.create('api::meal-ordered.meal-ordered', {
         data: {
           name: ctx.request.body.name,
-          vendor: ctx.request.body.vendor,
+          totalPrice: ctx.request.body.totalPrice,
+          paymentMethod: ctx.request.body.paymentMethod,
+          address: ctx.request.body.address,
           email: user.email,
           user: user.id
         }

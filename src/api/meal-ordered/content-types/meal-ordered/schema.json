@@ -25,6 +25,20 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "meal_ordereds"
+    },
+    "meals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::meal.meal"
+    },
+    "totalPrice": {
+      "type": "decimal"
+    },
+    "paymentMethod": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
     }
   }
 }

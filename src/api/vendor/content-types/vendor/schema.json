@@ -17,12 +17,6 @@
       "relation": "oneToMany",
       "target": "api::meal.meal"
     },
-    "locations": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::location.location",
-      "inversedBy": "vendors"
-    },
     "name": {
       "type": "string"
     },
@@ -53,11 +47,15 @@
       "type": "integer"
     },
     "vendorImageBackground": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "location": {
+      "type": "string"
     }
   }
 }
