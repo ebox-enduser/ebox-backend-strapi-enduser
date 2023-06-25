@@ -74,12 +74,6 @@
       "target": "api::meal-ordered.meal-ordered",
       "mappedBy": "user"
     },
-    "favorite_vendors": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::favorite-vendor.favorite-vendor",
-      "mappedBy": "user"
-    },
     "user_locations": {
       "type": "relation",
       "relation": "oneToMany",
